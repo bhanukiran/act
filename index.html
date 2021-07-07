@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2021-07-07 Wed 19:05 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Bhanu" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body style="text-align: justify; margin-top: 100px;
+  margin-bottom: 5%;
+  margin-right: 10%;
+  margin-left: 10%;
+font-size:20px">
+<div id="content">
+
+<div id="outline-container-orga4553d6" class="outline-2">
+<h2 id="orga4553d6">Some thoughts on gender and division of labor (draft)</h2>
+<div class="outline-text-2" id="text-orga4553d6">
+<p>
+If you notice carefully the gender questions (such as equality vs equity / fair competition vs efficiency etc) almost exclusively arise in the context of modern workplace environments (eg: Management / IT / Academia etc) where the means and modes of production are sophisticated. In contrast, in relative under-developed settings (eg: agriculture, construction works, handicrafts  etc) where the entire family (the man, the woman and the children) 'have to' go to work together in order to survive, these questions are seldom asked.
+</p>
+</div>
+
+<div id="outline-container-orgc329344" class="outline-3">
+<h3 id="orgc329344">What can we understand from this difference?</h3>
+<div class="outline-text-3" id="text-orgc329344">
+<ul class="org-ul">
+<li>Gender bias is counter productive to capitalism - that's the reason gender conflicts continue to emerge with advancement in the means of production (the more developed a country is the more these issues are discussed). On the other hand, it is not so much of an issue for a slower (and more localized and less organized) feudal mode of production we see in rural India. As a matter of fact the family structures and gender relations are in sync (historically adjusted) with the pace at which feudal mode production operates. This is the reason why gender questions seldom surface in a rural contexts. Or, the gender questions are settled within the system of prevailing culture/logic without calling for any revolutionary movement per se.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org0140b37" class="outline-3">
+<h3 id="org0140b37">Capitalism is progressive so far as the gender question is concerned.</h3>
+<div class="outline-text-3" id="text-org0140b37">
+<ul class="org-ul">
+<li>I claim that in modern work environments (undertaken in capitalist mode of production) gender imbalance actually hinders growth. If a 'human-resource' is efficient and can evidently add value to an organization, a modern company doesn't have to give one shit if it's a woman, a  man, or what part of gender spectrum they belong. Decisions made with gender bias in mind (instead of optimizing profits) will prove detrimental for an organization. Why? Simply because there is no evidence that men can fair better than women in any of the modern sectors - so no effort to undermine a resource based on their gender will prove to be profitable. Therefore, like everything else that capitalism crushes for coming in its way, gender imbalance is going to be one. For its own good, capitalism is walking the 'progressive' path in this context. Remember it doesn't care about absolute 'emancipation' of women directly &#x2013; it just does what is good for its productivity. This 'emancipation' of a woman from financial dependency would liberate her spiritually but only partially. Since she is still a captive of capitalism, her 'ideals and dreams' are still very much going to be within the confines of market economy. She's an independent consumer of the market now! While we may not call this the ultimate liberation it definitely a push towards progress.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org09ef6df" class="outline-3">
+<h3 id="org09ef6df">How can we call it progress?</h3>
+<div class="outline-text-3" id="text-org09ef6df">
+<ul class="org-ul">
+<li>Now the conflict is between capitalism and patriarchy. Capitalism operates with fast paced, sophisticated skills, (controlled yet) rational outlook for things, and exposes women to global cultures and progressive tendencies. This spiritual emancipation of a women (although only partial), particularly the sexual freedom  she may secure as a result is a threat to patriarchy. What the heck patriarchy anyway? Patriarchy is basically the remnant from the past &#x2013; gender relations that got solidified under the past mode of productions - simple as that. Basically patriarchy is a habit, rather a practice, a mode of division of labor that gave the beastly humans an edge in the forest. The gender roles and labor distribution kept changing as the mode of production evolved. Also, at any given snapshot of history, the gender roles also depend on the 'class' of concern. I'm sure agree with this. Melinda Gates's problems are so different from problems of a housewife in Pakistan and wife of a fisherman on the shore of Vizag! Their 'fates' are essentially intertwined with the economical system around them. Each of these are progressing at their own pace.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgcec2d76" class="outline-3">
+<h3 id="orgcec2d76">Feminism?</h3>
+<div class="outline-text-3" id="text-orgcec2d76">
+<ul class="org-ul">
+<li>From what I understand the conventional feminism is capitalist expression (of disapproval) of prevailing gender relations. This is not bad. It is definitely progress. May not be the kind of progress that a socialist would aspire to see, but this will eventually contribute to that (this is my personal belief). Women are joining the work force these days not necessarily because they found their ultimate purpose of life but because they get to afford a 3 bedroom flat! You see? That's the kind of equality that this is all leading to. Women are going to as clueless as men under capitalism :) They are going to be trapped in market web aspiring to buy stuff at their own 'free will'. Dudes like bikes, chicks will fashion - both liberated! Free to buy anything they want (from the menu) by selling their labor. So capitalism will anyway take care of all this even if we don't do anything. There's a good reason why feminism is actually so mainstream! You saw how Microsoft is shitting pants to guard the image of Bill Gates? because it knows that this perception is going effect their business! Corporations have already surrendered to the scientific fact that women can be as efficient as men - there's nothing further to prove there. The direction has already been set. Work place equality, equity and whatever it is - all that will be done. Not because Jesus will punish but because that's what is fiscally optimal! The current feminist movements thrive to accelerate this development. Which is fine actually. Smashing of patriarchy will happen - there's not stopping.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org96e75ee" class="outline-3">
+<h3 id="org96e75ee">What can be done?</h3>
+<div class="outline-text-3" id="text-org96e75ee">
+<ul class="org-ul">
+<li>Theoretically there's nothing sacred about anything that is in existence. 'Existing' economy, 'existing' idea of family, 'existing' myth of culture, 'exiting' markets  etc. True revolutionaries think beyond there conceptual constraints. We can take a brave and critical take on all these things. Conventional feminists seek 'emancipation' of women within a capitalist mode of production, by demanding for maternity leaves, increasing no. of women CEOs etc. This according to me is a very weak stand and reflects on the lack of critical analysis of economy which is the root of all inequalities. Also, why should women be worried about 'ladies only' issues? Why can't their thinkers like Galileo, Newton, Darwin and Marx who spoke for the entire humanity? I personally think this 'ladies only issues' are</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Bhanu</p>
+<p class="date">Created: 2021-07-07 Wed 19:05</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
